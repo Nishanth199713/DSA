@@ -1,18 +1,14 @@
-import java.io.*;
-import java.util.*;
-
-public class NaturalNumbers2 {
-
+class Main {
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner scan=new Scanner(System.in);
-        int num1=scan.nextInt();
-        int sum=0;
-        for(int i=1;i<=num1;i++)
+        System.out.println("Try programiz.pro");
+        int n=4;
+        for(int i=1;i<=n;i++)
         {
-            sum+=i;
+            for(int j=n;j>=i;j--)
+            {
+                System.out.print("*");
+            }
+            System.out.println("");
         }
-        System.out.println(sum);
-        scan.close();
     }
 }
